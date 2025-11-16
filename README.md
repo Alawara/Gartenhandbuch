@@ -34,21 +34,21 @@ Ich kann auf http://127.0.0.1:8000/ eine Nachricht sehen, die App funktioniert s
 
 
 
+Ich kann Wetterdaten abrufen und anzeigen (über open-meteo API)
+
+
+
+Ich kann Jahreszeit erkennen (via datetime)
+
+
+
+Habe Gartenarbeiten kategorisiert und in json-Datei eingetragen. 
+
 
 Als nächstes habe ich geplant: 
 
 
-
-Wetterdaten abrufen und anzeigen (über open-meteo API)
-
-
-
-Jahreszeit erkennen (via datetime)
-
-
-
-Gartenarbeiten kategorisieren und in json-Datei eintragen. 
-
+Wetterdaten und Jahreszeit auf der http://127.0.0.1:8000/ anzeigen lassen
 
 
 Abhängig von Wetter und Jahreszeit Gartenarbeiten vorschlagen
