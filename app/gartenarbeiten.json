@@ -1,0 +1,17 @@
+
+[
+    {"aufgabe": "Dicke Bohnen säen", "jahreszeit": "Frühling"},
+    {"aufgabe": "Möhren säen", "jahreszeit": "Frühling"},
+    {"aufgabe": "Tomaten vorziehen", "jahreszeit": "Frühling"},
+    {"aufgabe": "Rosen schneiden", "jahreszeit": "Frühling"},
+    
+    {"aufgabe": "Gießen", "jahreszeit": "Sommer"},
+    {"aufgabe": "Unkraut jäten", "jahreszeit": "Sommer"},
+    {"aufgabe": "Tomaten ausgeizen", "jahreszeit": "Sommer"},
+    
+    {"aufgabe": "Laub rechen", "jahreszeit": "Herbst"},
+    {"aufgabe": "Blumenzwiebeln setzen", "jahreszeit": "Herbst"},
+    
+    {"aufgabe": "Pflanzen vor Frost schützen", "jahreszeit": "Winter"},
+    {"aufgabe": "Planung für nächste Saison", "jahreszeit": "Winter"}
+]
