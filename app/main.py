@@ -2,6 +2,7 @@ from fastapi import FastAPI
 
 from .wetter import hol_wetter
 
+from .jahreszeiten import aktuelle_jahreszeit
 
 app = FastAPI(title="Gartenhandbuch")
 
@@ -9,9 +10,18 @@ app = FastAPI(title="Gartenhandbuch")
 
 @app.get("/")
 def read_root():
+    wetterdaten = hol_wetter()
+
+    for item in wetterdaten:
+        print(item) 
+
+    
     
     return {
-        "message": "Du hast dein Gartenhandbuch geöffnet!"
+        "message": "Du hast dein Gartenhandbuch geöffnet!!",
+        "So ist das Wetter heute!": wetterdaten ,
+        "Jahreszeit": jahreszeit(),
+        "Aufgaben": garten_aufgaben
         }
 
 
@@ -32,4 +42,9 @@ def wetter():
     # ruft die Funktion in wetter.py auf
     wetterdaten = hol_wetter()
     return wetterdaten
+
+@app.get("/jahreszeiten")
+def jahreszeit():
+    saison = aktuelle_jahreszeit()
+    return saison
 
