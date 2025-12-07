@@ -47,13 +47,13 @@ Habe Gartenarbeiten kategorisiert und in json-Datei eingetragen.
 Wetterdaten und Jahreszeit werden auf der http://127.0.0.1:8000/ angezeigt
 
 
-Abhängig von der Jahreszeit werden Gartenarbeiten vorgeschlagen
+Abhängig von der Jahreszeit und dem aktuellen Monat werden Gartenarbeiten vorgeschlagen
 
 Als nächstes habe ich geplant: 
 
 Gartenarbeiten sollen auch abhängig vom Wetter angezeigt werden (bei Regen kann ich nicht draußen arbeiten)
 
-Statt nach Jahreszeiten soll nach Monaten unterschieden werden. (Blumenzwiebeln besser schon im September bestellen, je nach Wetter kann ich sie dann bis November in die Erde bringen)
+
 
 
 
