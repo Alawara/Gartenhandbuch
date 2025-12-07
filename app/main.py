@@ -2,7 +2,7 @@ from fastapi import FastAPI
 
 from .wetter import hol_wetter
 
-from .jahreszeiten import aktuelle_jahreszeit
+from .jahreszeiten import aktueller_monat_und_jahreszeit
 
 app = FastAPI(title="Gartenhandbuch")
 
@@ -13,13 +13,15 @@ with open("app/gartenarbeiten.json", "r", encoding="utf-8") as garten_datei:
     garten_aufgaben = json.load(garten_datei)
 
 
-# aktuelle Jahreszeit bestimmen
-saison = aktuelle_jahreszeit()
+# aktuellen Monat und Jahreszeit bestimmen
+zeit = aktueller_monat_und_jahreszeit()
+monat = zeit["monat"]
+jahreszeit = zeit["jahreszeit"]
 
 # Filtern nach Aufgaben für die aktuelle Jahreszeit
 aufgaben_jetzt = [
     aufgabe for aufgabe in garten_aufgaben
-    if aufgabe.get("jahreszeit") == saison
+    if aufgabe.get("monat") == monat
 ]
 
 
@@ -36,7 +38,8 @@ def read_root():
     return {
         "message": "Du hast dein Gartenhandbuch geöffnet!",
         "So ist das Wetter heute!": wetterdaten ,
-        "Jahreszeit": jahreszeit(),
+        "Jahreszeit": jahreszeit,
+        "Monat": monat,
         "Aufgaben für diese Jahreszeit": aufgaben_jetzt,
        
         }
@@ -51,6 +54,6 @@ def wetter():
 
 @app.get("/jahreszeiten")
 def jahreszeit():
-    saison = aktuelle_jahreszeit()
-    return saison
+    zeit = aktueller_monat_und_jahreszeit()
+    return zeit
 
