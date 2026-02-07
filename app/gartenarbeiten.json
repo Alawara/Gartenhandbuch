@@ -1,17 +1,16 @@
-
 [
-    {"aufgabe": "Dicke Bohnen säen", "jahreszeit": "Frühling"},
-    {"aufgabe": "Möhren säen", "jahreszeit": "Frühling"},
-    {"aufgabe": "Tomaten vorziehen", "jahreszeit": "Frühling"},
-    {"aufgabe": "Rosen schneiden", "jahreszeit": "Frühling"},
-    
-    {"aufgabe": "Gießen", "jahreszeit": "Sommer"},
-    {"aufgabe": "Unkraut jäten", "jahreszeit": "Sommer"},
-    {"aufgabe": "Tomaten ausgeizen", "jahreszeit": "Sommer"},
-    
-    {"aufgabe": "Laub rechen", "jahreszeit": "Herbst"},
-    {"aufgabe": "Blumenzwiebeln setzen", "jahreszeit": "Herbst"},
-    
-    {"aufgabe": "Pflanzen vor Frost schützen", "jahreszeit": "Winter"},
-    {"aufgabe": "Planung für nächste Saison", "jahreszeit": "Winter"}
+    {"aufgabe": "Dicke Bohnen säen", "monat": "März", "jahreszeit": "Frühling"},
+    {"aufgabe": "Möhren säen", "monat": "April", "jahreszeit": "Frühling"},
+    {"aufgabe": "Tomaten vorziehen", "monat": "März", "jahreszeit": "Frühling"},
+    {"aufgabe": "Rosen schneiden", "monat": "März", "jahreszeit": "Frühling"},
+
+    {"aufgabe": "Gießen", "monat": "Juli", "jahreszeit": "Sommer"},
+    {"aufgabe": "Unkraut jäten", "monat": "Juni", "jahreszeit": "Sommer"},
+    {"aufgabe": "Tomaten ausgeizen", "monat": "Juli", "jahreszeit": "Sommer"},
+
+    {"aufgabe": "Laub rechen", "monat": "Oktober", "jahreszeit": "Herbst"},
+    {"aufgabe": "Blumenzwiebeln setzen", "monat": "September", "jahreszeit": "Herbst"},
+
+    {"aufgabe": "Pflanzen vor Frost schützen", "monat": "Dezember", "jahreszeit": "Winter"},
+    {"aufgabe": "Planung für nächste Saison", "monat": "Januar", "jahreszeit": "Winter"}
 ]
